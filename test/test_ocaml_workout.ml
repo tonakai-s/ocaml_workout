@@ -9,5 +9,9 @@ let () =
         test_case "Get Some Pair" `Quick Test_last_two_tail_list.get_some;
         test_case "Get None from Empty" `Quick Test_last_two_tail_list.get_none_from_empty;
         test_case "Get None from One" `Quick Test_last_two_tail_list.get_none_from_one;
+      ];
+      "Nth of List", [
+        test_case "Get string from nth" `Quick Test_nth_tails_list.get_string;
+        test_case "Get out of bouds" `Quick Test_nth_tails_list.throw_out_of_bounds;
       ]
     ]
