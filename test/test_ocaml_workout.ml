@@ -13,5 +13,9 @@ let () =
       "Nth of List", [
         test_case "Get string from nth" `Quick Test_nth_tails_list.get_string;
         test_case "Get out of bouds" `Quick Test_nth_tails_list.throw_out_of_bounds;
+      ];
+      "List length", [
+        test_case "Get list size" `Quick Test_length_of_list.length_content;
+        test_case "Get empty" `Quick Test_length_of_list.length_empty;
       ]
     ]
