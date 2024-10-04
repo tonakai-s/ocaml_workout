@@ -17,5 +17,8 @@ let () =
       "List length", [
         test_case "Get list size" `Quick Test_length_of_list.length_content;
         test_case "Get empty" `Quick Test_length_of_list.length_empty;
-      ]
+      ];
+      "Reverse lsit", [
+        test_case "Get reverse" `Quick Test_reverse_list.reversed;
+      ];
     ]
