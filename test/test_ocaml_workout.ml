@@ -18,7 +18,11 @@ let () =
         test_case "Get list size" `Quick Test_length_of_list.length_content;
         test_case "Get empty" `Quick Test_length_of_list.length_empty;
       ];
-      "Reverse lsit", [
+      "Reverse list", [
         test_case "Get reverse" `Quick Test_reverse_list.reversed;
+      ];
+      "List is palindrome", [
+        test_case "Is palindrome" `Quick Test_list_is_palindrome.is_palindrome;
+        test_case "Not palindrome" `Quick Test_list_is_palindrome.not_palindrome;
       ];
     ]
