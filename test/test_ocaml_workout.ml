@@ -25,4 +25,7 @@ let () =
         test_case "Is palindrome" `Quick Test_list_is_palindrome.is_palindrome;
         test_case "Not palindrome" `Quick Test_list_is_palindrome.not_palindrome;
       ];
+      "Flatten list", [
+        test_case "Flattened List" `Quick Test_flatten_a_list.flatten;
+      ];
     ]
