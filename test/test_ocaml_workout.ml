@@ -28,4 +28,7 @@ let () =
       "Flatten list", [
         test_case "Flattened List" `Quick Test_flatten_a_list.flatten;
       ];
+      "Remove list duplicated", [
+        test_case "Compressed list" `Quick Test_remove_list_duplicates.remove_duplicates;
+      ];
     ]

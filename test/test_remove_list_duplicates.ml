@@ -1,0 +1,2 @@
+let remove_duplicates () =
+  Alcotest.(check (list string)) "Removed duplicates" ["a"; "b"; "c"; "a"; "d"; "e"] (Ocaml_workout.Remove_list_duplicates.compress ["a"; "a"; "a"; "a"; "b"; "c"; "c"; "a"; "a"; "d"; "e"; "e"; "e"; "e"])
