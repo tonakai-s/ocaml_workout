@@ -31,4 +31,8 @@ let () =
       "Remove list duplicated", [
         test_case "Compressed list" `Quick Test_remove_list_duplicates.remove_duplicates;
       ];
+      "Pack list duplicates", [
+        test_case "Packed list" `Quick Test_pack_consecutive_elements.pack_consecutive;
+        test_case "Last elem diff" `Quick Test_pack_consecutive_elements.pack_consecutive_diff_end;
+      ];
     ]
