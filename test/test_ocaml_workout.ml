@@ -35,4 +35,8 @@ let () =
         test_case "Packed list" `Quick Test_pack_consecutive_elements.pack_consecutive;
         test_case "Last elem diff" `Quick Test_pack_consecutive_elements.pack_consecutive_diff_end;
       ];
+      "Length encode", [
+        test_case "Encode" `Quick Test_length_encoding.encode;
+        test_case "Encode diff end" `Quick Test_length_encoding.encode_diff_end;
+      ];
     ]
